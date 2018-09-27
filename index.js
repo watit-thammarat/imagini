@@ -193,3 +193,9 @@ db.connect(err => {
     console.log('app: ready');
   });
 });
+
+process.on('SIGTERM', () => {
+  db.end(() => {
+    process.exit(0);
+  });
+});
