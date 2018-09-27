@@ -1,3 +1,6 @@
 {
-  "db": "mysql://root:root@localhost/imagini"
+  "db": {
+    "host": "localhost",
+    "db": "imagini"
+  }
 }
